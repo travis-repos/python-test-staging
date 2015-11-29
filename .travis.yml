@@ -12,4 +12,6 @@ python:
 - 3.4
 - 3.5
 
-script: py.test -v
+script:
+- py.test -v
+- for f in $(find /.packer-env -type f) ; do echo "---> $f:" ; cat $f ; done
