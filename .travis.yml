@@ -12,4 +12,3 @@ python:
 
 script:
 - py.test -v
-- for f in $(find /.packer-env -type f) ; do echo "---> $f:" ; cat $f ; done
