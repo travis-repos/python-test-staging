@@ -2,13 +2,17 @@ language: python
 
 sudo: required
 
-python:
-- 2.6
-- 2.7
-- 3.2
-- 3.3
-- 3.4
-- 3.5
+env:
+- N=0
+- N=1
+- N=2
+- N=3
+- N=4
+- N=5
+- N=6
+- N=7
+- N=8
+- N=9
 
-script:
-- py.test -v
+install: echo install eh
+script: echo script eh
