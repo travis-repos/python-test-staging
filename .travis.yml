@@ -1,8 +1,8 @@
 language: python
 
-sudo: flimflam
+sudo: required
 
-dist: whatebber
+group: edge
 
 env:
 - N=00
@@ -26,5 +26,9 @@ env:
 - N=18
 - N=19
 
-install: echo install eh
-script: echo script eh
+install:
+- sudo apt-get update
+- sudo apt-get install dnsutils
+
+script:
+- dig google.com
